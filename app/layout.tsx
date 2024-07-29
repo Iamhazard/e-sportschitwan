@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Home/Navbar";
 import { cn } from "@/lib/utils";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
+import Footer from "@/components/Home/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
@@ -33,10 +34,14 @@ export default function RootLayout({
           `${inter.variable} ${ibmPlexSerif.variable}`
         )}
       >
-        <main className="relative flex flex-col min-h-screen">
+        <main className="relative flex flex-col min-h-screen ">
           <Navbar />
           {children}
         </main>
+        <div>
+
+          <Footer />
+        </div>
 
       </body>
     </html >

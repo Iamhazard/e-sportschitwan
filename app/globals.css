@@ -12,18 +12,18 @@
   pointer-events: none;
   background-image: url('/images/your-image.webp');
   background-size: cover;
-
   background-position: center;
   overflow-x: hidden;
+  overflow-y: hidden;
   background-repeat: no-repeat;
 }
 
 
 .main:after {
   content: "";
-  background-image: url('/images/esa.webp');
+  background-image: url('/images/icons.jpeg');
   background-size: cover;
-  z-index: 1;
+  z-index: -1;
   background-repeat: no-repeat;
   position: absolute;
   object-fit: cover;
@@ -113,5 +113,9 @@
     @apply bg-gray-900 text-foreground;
   }
 
+  .bg-blur-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(10px);
+  }
 
 }

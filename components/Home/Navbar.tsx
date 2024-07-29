@@ -9,7 +9,7 @@ const Navbar = () => {
     const user = null;
     return (
         <>
-            <header className="relative bg-gray-900">
+            <header className="relative">
 
                 <MaxWidthWrapper>
                     <div className="h-[1px] bg-white mt-12 ">
